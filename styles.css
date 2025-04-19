@@ -1,0 +1,129 @@
+:root {
+    --Orange500: hsl(25, 97%, 53%);
+--White: hsl(0, 100%, 100%);
+--Grey500: hsl(217, 12%, 63%);
+--Grey900: hsl(213, 19%, 18%);
+--Grey950: hsl(216, 12%, 8%);
+--Greybackground: hsla(213, 19.60%, 18.00%, 0.50);
+
+ --regular-font: 400;
+ --bold-font: 700;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Grey950);
+    display: grid;
+    place-items: center;
+    min-height: 100vh
+
+}
+
+p {
+    color: var(--Grey500);
+    font-size: 0.8rem;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.card {
+    background-color: var(--Greybackground);
+    width: 22rem;
+    display: grid;
+    gap: 20px;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--Grey900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    color: var(--White);
+    font-size: 1.5rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-botton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--Grey900);
+    color: var(--Grey500);
+    font-weight: var(--bold-font);
+}
+
+.rating-botton:hover{
+    background-color: var(--Orange500);
+    color: var(--Grey900)
+}
+
+
+.submit {
+    height: 40px;
+    border-radius: 20px;
+    font-weight: var(--bold-font);
+    background-color: var(--Orange500);
+}
+.submit:hover{
+    background-color: var(--White);
+}
+
+.rating-text {
+    background-color: var(--Greybackground);
+    width: fit-content;
+    margin: auto;
+    padding: 5px 18px;
+    border-radius: 12px;
+    color: var(--Orange500);
+
+}
+
+
+/* generic class */
+
+.hidden {
+    display: none;
+}
+    
+.active {
+    background-color: var(--White);
+    color: var(--Grey950)
+}
+
+.center {
+    text-align: center
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 20px
+    }
+    .card {
+        width: 100%;
+    }
+}
